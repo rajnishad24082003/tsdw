@@ -1,0 +1,19 @@
+{
+  "name": "tsdw-website",
+  "version": "1.0.0",
+  "description": "This is official TSDW WEBSITE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjeet25/tsdw-website.git"
+  },
+  "author": "TSDW TECHNICAL COMMITEE MEMBERS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjeet25/tsdw-website/issues"
+  },
+  "homepage": "https://github.com/ranjeet25/tsdw-website#readme"
+}
