@@ -1,12 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Londrina+Solid:wght@300&family=Marck+Script&family=Mukta:wght@700&family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,400;1,500&family=Press+Start+2P&family=Quicksand:wght@300;400&family=Raleway&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
   --orange: #ff8c32;
-  --dark: #06113c;
+  --dark: #1f1f1f;
   --light: #eeeeee;
   --glight: #dddddd;
+}
+
+.main-nav {
+  height: 90px;
+  background-color: var(--orange);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline;
+
+  margin: 0px 15px;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s linear 0s;
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-family: "Londrina Solid", cursive;
+  color: var(--dark);
+  background-color: #fbfbfb;
+  box-shadow: rgba(0, 0, 0, 0.048) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.navlinks li a:hover {
+  box-shadow: none;
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: 100%;
+    background: #222831;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .navlinks {
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navlinks li {
+    background-color: rgba(127, 255, 212, 0);
+    margin-top: 10px;
+  }
+
+  .navlinks li a {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
 }
