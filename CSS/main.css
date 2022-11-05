@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --orange: #ff8c32;
+  --dark: #06113c;
+  --light: #eeeeee;
+  --glight: #dddddd;
+}
