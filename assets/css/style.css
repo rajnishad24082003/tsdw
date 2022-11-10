@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=DM+Sans&family=Dela+Gothic+One&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,700&family=Londrina+Solid:wght@100;300;400&family=Marck+Script&family=Mukta:wght@700&family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,400;1,500&family=Press+Start+2P&family=Quicksand:wght@300;400&family=Raleway:wght@400;700&family=Roboto&display=swap");
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -26,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
 }
 
 /*--------------------------------------------------------------
@@ -167,21 +168,26 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
 .header.header-scrolled {
   background: #fff;
-  padding: 15px 0;
+  padding: 16px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
 .header .logo {
   line-height: 0;
+  background-color: none;
 }
 
 .header .logo img {
-  max-height: 40px;
+  width: 80px;
+  height: 45px;
   margin-right: 6px;
+  background-color: none;
 }
 
 .header .logo span {
@@ -189,7 +195,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
   margin-top: 3px;
 }
 
@@ -221,12 +227,13 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-family: "Londrina Solid", cursive;
+  font-size: 17px;
   color: #013289;
   white-space: nowrap;
   transition: 0.3s;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 350;
 }
 
 .navbar a i,
@@ -439,7 +446,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: linear-gradient(to right, #ff512f, #f09819);
   background-size: cover;
 }
 
@@ -449,16 +456,21 @@ section {
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #012970;
+  font-size: 3.6rem;
+  font-family: "Londrina Solid", cursive;
+  background: -webkit-linear-gradient(rgb(249, 249, 249), rgb(255, 255, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero h2 {
-  color: #444444;
+  color: #ffffff;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-size: 1.3rem;
+  text-align: justify;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 300;
 }
 
 .hero .btn-get-started {
@@ -467,14 +479,14 @@ section {
   padding: 15px 100px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #fff;
-  background: #ff731d;
+  color: rgb(29, 29, 29);
+  background: #ffffff;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -491,6 +503,13 @@ section {
 
 .hero .hero-img {
   text-align: right;
+  border-radius: 30px;
+}
+
+.hero .hero-img img {
+  border-radius: 30px;
+  border: 3px dashed #fff;
+  padding: 15px;
 }
 
 @media (min-width: 1024px) {
@@ -512,6 +531,7 @@ section {
 
   .hero .hero-img img {
     width: 80%;
+    border-radius: 10px;
   }
 }
 
@@ -532,38 +552,38 @@ section {
 
   .hero .hero-img img {
     width: 100%;
-    transform: scale(1.2);
-    display: none;
+    transform: scale(1.6);
   }
 }
 
-/*--------------------------------------------------------------
-# Index Page
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-right: 5px;
 }
 
 .about h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #ff731d;
+  font-size: 24px;
+  font-weight: 600;
+  color: #5969f3;
   text-transform: uppercase;
 }
 
 .about h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   color: #012970;
 }
 
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 300;
 }
 
 .about .btn-read-more {
@@ -572,13 +592,14 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #ff731d;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
+  background: #5969f3;
+  box-shadow: 0px 5px 25px #abb3ff;
 }
 
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 300;
+
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -591,6 +612,13 @@ section {
 
 .about .btn-read-more:hover i {
   transform: translateX(5px);
+}
+
+#section2_img {
+  padding: 5px;
+  border: 2px dashed #5969f3;
+  transform: scale(1);
+  box-shadow: 0px 5px 25px #cbd0ff;
 }
 
 /*--------------------------------------------------------------
@@ -658,14 +686,14 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
   font-size: 14px;
 }
 
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .feature-box {
+/* .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   transition: 0.3s;
@@ -785,7 +813,7 @@ section {
 .features .feature-icons .content .icon-box p {
   font-size: 15px;
   color: #848484;
-}
+} */
 
 /*--------------------------------------------------------------
 # Services
@@ -1017,7 +1045,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #ff731d;
@@ -2326,7 +2354,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
   margin-top: 3px;
 }
 
@@ -2334,7 +2362,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Londrina Solid", cursive;
 }
 
 .footer .footer-top .social-links a {
