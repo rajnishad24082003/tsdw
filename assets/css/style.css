@@ -44,27 +44,33 @@ section {
 }
 
 .section-header h2 {
-  font-size: 13px;
+  display: inline;
+  font-size: 36px;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
   color: #ff731d;
   text-transform: uppercase;
+  border-bottom: 4px solid #ff731d;
 }
 
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 42px;
   font-weight: 700;
   color: #012970;
+  font-family: "Londrina Solid", cursive;
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
   .section-header p {
-    font-size: 28px;
+    font-size: 20px;
     line-height: 32px;
+    font-family: "Londrina Solid", cursive;
+    font-weight: 300;
   }
 }
 
@@ -559,6 +565,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
 .about .content {
   background-color: #f6f9ff;
   padding: 40px;
@@ -624,12 +631,16 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+.values {
+  height: auto;
+}
 .values .box {
   padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
   transition: 0.3s;
   height: 100%;
+  border: 2px dashed #4c79d2;
 }
 
 .values .box img {
@@ -641,12 +652,13 @@ section {
 .values .box h3 {
   font-size: 24px;
   color: #012970;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 18px;
 }
 
 .values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  box-shadow: 0px 5px 25px #cbd0ff;
+  border: 3px dashed #4c79d2;
 }
 
 .values .box:hover img {
@@ -667,6 +679,11 @@ section {
   width: 100%;
   background: #fff;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border: 3px dashed #ff77002e;
+  transition: all 0.3s ease-out;
+}
+.counts .count-box:hover {
+  border: 3px dashed #ff77008e;
 }
 
 .counts .count-box i {
@@ -971,105 +988,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.pricing .box:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
-
-.pricing h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.pricing .price {
-  font-size: 36px;
-  color: #444444;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-
-.pricing .price sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .price span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing img {
-  padding: 30px 40px;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 26px;
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-
-.pricing ul li {
-  padding-bottom: 10px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  color: #ff731d;
-  transition: none;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Londrina Solid", cursive;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid #ff731d;
-}
-
-.pricing .btn-buy:hover {
-  background: #ff731d;
-  color: #fff;
-}
-
-.pricing .featured {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #ff731d;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
 .faq .accordion-collapse {
@@ -1078,7 +996,7 @@ section {
 
 .faq .accordion-button {
   padding: 15px 15px 20px 0;
-  font-weight: 600;
+  font-weight: 300;
   border: 0;
   font-size: 18px;
   color: #444444;
@@ -1116,7 +1034,7 @@ section {
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
+  padding: 8px 25px 10px 25px;
   font-size: 15px;
   font-weight: 600;
   line-height: 1;
@@ -1131,6 +1049,7 @@ section {
 .portfolio #portfolio-flters li.filter-active {
   color: #ff731d;
   border-color: #ff731d;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1160,6 +1079,7 @@ section {
 
 .portfolio .portfolio-wrap img {
   transition: 1s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -1178,38 +1098,10 @@ section {
   align-items: center;
 }
 
-.portfolio .portfolio-wrap .portfolio-info::before {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 35px;
-  left: 35px;
-  border-top: 3px solid rgba(1, 41, 112, 0.2);
-  border-left: 3px solid rgba(1, 41, 112, 0.2);
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
-.portfolio .portfolio-wrap .portfolio-info::after {
-  display: block;
-  content: "";
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid rgba(1, 41, 112, 0.2);
-  border-right: 3px solid rgba(1, 41, 112, 0.2);
-  transition: all 0.5s ease 0s;
-  z-index: 9994;
-}
-
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 22px;
   color: #012970;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
@@ -1343,94 +1235,6 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 40px 30px;
-  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-  background: #fff;
-  min-height: 320px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #ff731d;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ff731d;
-}
-
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
-
-@media (max-width: 1199px) {
-  .testimonials .swiper-slide-active {
-    opacity: 1;
-  }
-
-  .testimonials .swiper-pagination {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonials .swiper-slide-next {
-    opacity: 1;
-    transform: scale(1.12);
-  }
 }
 
 /*--------------------------------------------------------------
