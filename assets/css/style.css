@@ -1435,6 +1435,14 @@ section {
   color: #444444;
   background: #fafbff;
   padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s ease-in;
+  border: 2px dashed #ffffff;
+}
+
+.contact .info-box:hover {
+  box-shadow: rgba(99, 99, 99, 0.048) 0px 2px 8px 0px;
+  border: 2px dashed #013ca3;
 }
 
 .contact .info-box i {
@@ -1461,6 +1469,14 @@ section {
   background: #fafbff;
   padding: 30px;
   height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 2px dashed #ffffff;
+  transition: 0.3s ease-in;
+}
+
+.contact .php-email-form:hover {
+  box-shadow: rgba(99, 99, 99, 0.177) 0px 2px 8px 0px;
+  border: 2px dashed #013ca3;
 }
 
 .contact .php-email-form .error-message {
